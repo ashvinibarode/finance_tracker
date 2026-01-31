@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #35588d;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a, .nav-links li button {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.profile-container {
+  max-width: 400px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dark-mode .profile-container {
+  background: #1e1e1e;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background: #29589e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode button {
+  background: #444;
+}
+
+@media screen and (max-width: 768px){
+  .nav-links { display: none; flex-direction: column; gap: 10px; }
+  .nav-links.open { display: flex; }
+  .hamburger { display: block; }
+}

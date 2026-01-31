@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="../css/goals.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">FinanceTracker</div>
+  <ul class="nav-links">
+    <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+    <li><a href="add-income.html"><i class="fas fa-wallet"></i> Add Income</a></li>
+    <li><a href="add-expense.html"><i class="fas fa-receipt"></i> Add Expense</a></li>
+    <li><a href="recurring-payments.html"><i class="fas fa-sync-alt"></i> Recurring</a></li>
+    <li><a href="dashboard.html" id="profile"></a></li>
+    <li><a href="#" id="logout"><i class="fas fa-right-from-bracket"></i> Logout</a></li>
+  </ul>
+  <div class="hamburger"><i class="fas fa-bars"></i></div>
+</nav>
+
+<header class="header">
+  <h1>Hi, <span id="userName"></span></h1>
+  <p>Set your financial goals and track progress</p>
+</header>
+
+<section class="form-section">
+  <form id="goalForm">
+    <input type="text" id="goalName" placeholder="Goal Name (e.g., New Laptop)" required>
+    <input type="number" id="goalAmount" placeholder="Target Amount" required>
+    <input type="number" id="currentAmount" placeholder="Current Saved" required>
+    <button type="submit">Add Goal</button>
+  </form>
+</section>
+
+<section class="list-section">
+  <h2>Your Goals</h2>
+  <ul id="goalList"></ul>
+</section>
+
+<script src="../js/goals.js"></script>
+</body>
+</html>

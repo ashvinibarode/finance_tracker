@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="../css/expense.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">FinanceTracker</div>
+  <ul class="nav-links">
+    <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+    <li><a href="add-income.html"><i class="fas fa-wallet"></i> Add Income</a></li>
+    <li><a href="add-expense.html"><i class="fas fa-receipt"></i> Add Expense</a></li>
+    <li><a href="dashboard.html" id="profile"></a></li>
+    <li><a href="#" id="logout"><i class="fas fa-right-from-bracket"></i> Logout</a></li>
+  </ul>
+  <div class="hamburger"><i class="fas fa-bars"></i></div>
+</nav>
+
+<header class="header">
+  <h1>Welcome, <span id="userName"></span></h1>
+  <p>Add and manage your expenses</p>
+</header>
+
+<section class="form-section">
+  <form id="expenseForm">
+    <input type="text" id="expenseDesc" placeholder="Description" required>
+    <input type="number" id="expenseAmount" placeholder="Amount" required>
+    <input type="date" id="expenseDate" required>
+    <button type="submit">Add Expense</button>
+  </form>
+</section>
+
+<section class="list-section">
+  <h2>Your Expenses</h2>
+  <ul id="expenseList"></ul>
+</section>
+
+<script src="../js/expense.js"></script>
+</body>
+</html>

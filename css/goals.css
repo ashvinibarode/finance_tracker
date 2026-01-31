@@ -1,0 +1,40 @@
+body { margin:0; font-family:'Poppins',sans-serif; background:#f5f7fa; }
+
+/* NAVBAR */
+.navbar { display:flex; justify-content:space-between; align-items:center; background:#667eea; color:white; padding:15px 20px; }
+.navbar .logo { font-size:22px; font-weight:bold; }
+.nav-links { list-style:none; display:flex; gap:12px; }
+.nav-links li a { color:white; text-decoration:none; display:flex; align-items:center; gap:6px; padding:8px 12px; border-radius:6px; transition:0.3s; }
+.nav-links li a:hover { background: rgba(255,255,255,0.2);}
+.hamburger { display:none; font-size:22px; cursor:pointer; }
+
+/* HEADER */
+.header { text-align:center; padding:30px; background:linear-gradient(135deg,#667eea,#764ba2); color:white;}
+.header h1 { margin:0 0 10px 0;}
+.header p { margin:0; font-size:16px; }
+
+/* FORM */
+.form-section { max-width:400px; margin:20px auto; padding:15px; background:white; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.form-section form { display:flex; flex-direction:column; gap:10px;}
+.form-section input { padding:10px; border-radius:6px; border:1px solid #ccc; }
+.form-section button { padding:12px; border:none; border-radius:6px; background:#667eea; color:white; cursor:pointer; font-size:16px; transition:0.3s;}
+.form-section button:hover { background:#5a6dd3; }
+
+/* LIST */
+.list-section { max-width:600px; margin:20px auto; background:white; padding:15px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.list-section ul { list-style:none; padding:0; }
+.list-section ul li { display:flex; flex-direction:column; padding:8px 10px; border-bottom:1px solid #eee; margin-bottom:10px;}
+.list-section ul li span { font-weight:bold; margin-bottom:5px; }
+.list-section ul li button { background:#f56565; border:none; color:white; padding:4px 8px; border-radius:4px; cursor:pointer; transition:0.2s; margin-top:5px;}
+.list-section ul li button:hover { background:#e53e3e; }
+
+/* PROGRESS BAR */
+.progress-container { width: 100%; height: 15px; background: #e5e7eb; border-radius: 8px; margin:5px 0; overflow:hidden;}
+.progress-bar { height: 100%; border-radius: 8px; transition: width 0.5s ease-in-out; }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav-links { display:none; flex-direction:column; position:absolute; top:60px; right:0; background:#5555aa; width:180px; border-radius:6px;}
+  .nav-links.open { display:flex; }
+  .hamburger { display:block; color:white; }
+}

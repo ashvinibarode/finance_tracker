@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">FinanceTracker</div>
+  <ul class="nav-links">
+    <li><a href="pages/dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+    <li><a href="pages/add-income.html"><i class="fas fa-wallet"></i> Add Income</a></li>
+    <li><a href="pages/add-expense.html"><i class="fas fa-receipt"></i> Add Expense</a></li>
+    <li><a href="pages/ai-insight.html"><i class="fas fa-robot"></i> AI Insights</a></li>
+    <li><a href="pages/subscriptions.html"><i class="fas fa-sync-alt"></i> Recurring</a></li>
+    <li><a href="pages/goals.html"><i class="fas fa-bullseye"></i> Goals</a></li>
+    <li><a href="pages/help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+    <li><a href="#" id="logout"><i class="fas fa-right-from-bracket"></i> Logout</a></li>
+  </ul>
+  <div class="hamburger"><i class="fas fa-bars"></i></div>
+</nav>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>Welcome, <span id="userName"></span></h1>
+  <p>Manage your money smarter with FinanceTracker</p>
+</header>
+
+<!-- CARDS GRID -->
+<section class="dashboard-cards">
+  <a href="pages/dashboard.html" class="card"><i class="fas fa-chart-line"></i>Dashboard</a>
+  <a href="pages/add-income.html" class="card"><i class="fas fa-wallet"></i>Add Income</a>
+  <a href="pages/add-expense.html" class="card"><i class="fas fa-receipt"></i>Add Expense</a>
+  <a href="pages/ai-insight.html" class="card"><i class="fas fa-robot"></i>AI Insights</a>
+  <a href="pages/subscriptions.html" class="card"><i class="fas fa-sync-alt"></i>Recurring</a>
+  <a href="pages/goals.html" class="card"><i class="fas fa-bullseye"></i>Goals</a>
+  <a href="pages/help.html" class="card"><i class="fas fa-question-circle"></i>Help</a>
+</section>
+
+<script src="../frontend/js/home.js"></script>
+</body>
+</html>
